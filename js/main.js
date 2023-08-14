@@ -3,14 +3,14 @@
 (function ($) {
 
     /*------------------
-        Preloader
+        Pré-carregador
     --------------------*/
     $(window).on('load', function () {
         $(".loader").fadeOut();
         $("#preloder").delay(200).fadeOut("slow");
 
         /*------------------
-            Gallery filter
+            Galeria filter
         --------------------*/
         $('.featured__controls li').on('click', function () {
             $('.featured__controls li').removeClass('active');
@@ -30,7 +30,7 @@
         $(this).css('background-image', 'url(' + bg + ')');
     });
 
-    //Humberger Menu
+    // Menu
     $(".humberger__open").on('click', function () {
         $(".humberger__menu__wrapper").addClass("show__humberger__menu__wrapper");
         $(".humberger__menu__overlay").addClass("active");
@@ -44,7 +44,7 @@
     });
 
     /*------------------
-		Navigation
+		Navegação mobile
 	--------------------*/
     $(".mobile-menu").slicknav({
         prependTo: '#mobile-menu-wrap',
@@ -92,7 +92,7 @@
     });
 
     /*--------------------------
-        Latest Product Slider
+        Controle deslizante de produto mais recente
     ----------------------------*/
     $(".latest-product__slider").owlCarousel({
         loop: true,
@@ -107,7 +107,7 @@
     });
 
     /*-----------------------------
-        Product Discount Slider
+        Controle deslizante de desconto do produto
     -------------------------------*/
     $(".product__discount__slider").owlCarousel({
         loop: true,
@@ -138,7 +138,7 @@
     });
 
     /*---------------------------------
-        Product Details Pic Slider
+        Detalhes do produto Pic Slider
     ----------------------------------*/
     $(".product__details__pic__slider").owlCarousel({
         loop: true,
@@ -151,7 +151,7 @@
     });
 
     /*-----------------------
-		Price Range Slider
+		Controle deslizante de faixa de preço
 	------------------------ */
     var rangeSlider = $(".price-range"),
         minamount = $("#minamount"),
@@ -177,7 +177,7 @@
     $("select").niceSelect();
 
     /*------------------
-		Single Product
+		Primeiro Produto
 	--------------------*/
     $('.product__details__pic__slider img').on('click', function () {
 
@@ -191,7 +191,7 @@
     });
 
     /*-------------------
-		Quantity change
+		Mudança de quantidade
 	--------------------- */
     var proQty = $('.pro-qty');
     proQty.prepend('<span class="dec qtybtn">-</span>');
@@ -202,7 +202,7 @@
         if ($button.hasClass('inc')) {
             var newVal = parseFloat(oldValue) + 1;
         } else {
-            // Don't allow decrementing below zero
+            // Não permitir decrementar abaixo de zero
             if (oldValue > 0) {
                 var newVal = parseFloat(oldValue) - 1;
             } else {
