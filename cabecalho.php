@@ -44,7 +44,7 @@
             <div class="header__cart__price">item: <span>$160.00</span></div>
 
             <div class="header__top__right__auth ml-4">
-                <a href="#"><i class="fa fa-user"></i> Login</a>
+                <a href="sistema"><i class="fa fa-user"></i> Login</a>
             </div>
         </div>
         <nav class="humberger__menu__nav mobile-menu">
@@ -96,7 +96,7 @@
                                 <a target="_blank" href="https://wa.me/<?php $whatsapp_link?>?text=Ol%C3%A1,%20gostaria%20de%20um%20or%C3%A7amento!%20" title="<?php echo $whatsapp?>"><i class="fa fa-whatsapp text-success"></i></a>
                             </div>
                             <div class="header__top__right__auth">
-                                <a href="#"><i class="fa fa-user"></i> Login</a>
+                                <a href="sistema"><i class="fa fa-user"></i> Login</a>
                             </div>
                         </div>
                     </div>
