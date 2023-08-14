@@ -27,7 +27,7 @@ Oferecer a oportunidade para os clientes deixarem avaliações e feedback sobre 
 Este e-commerce é projetado para se adaptar a diferentes dispositivos, garantindo uma experiência consistente e agradável, independentemente do tamanho da tela.
 
 # Apoio ao Cliente: 
-Estamos comprometidos em oferecer um excelente atendimento ao cliente.Todos os icones de wpp no site irá transmitir uma mensagem automática para o comercial e assim o cliente será atendido na hora para ajudar os clientes em sua jornada de compra.
+oferecço um excelente atendimento ao cliente.Todos os icones de wpp no site ao clicar será enviado uma mensagem automática para o comercial e assim o cliente será atendido na hora para ajudar os clientes em sua jornada de compra.
 
 Acredito que a moda infantil de qualidade merece um espaço online que inspire confiança e satisfação. Fique à vontade para explorar o código-fonte, contribuir com melhorias e fazer parte deste esforço contínuo para tornar a experiência de compra de roupas infantis ainda mais memorável e encantadora!
 
