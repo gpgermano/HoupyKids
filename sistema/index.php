@@ -37,27 +37,16 @@
                             </div>
                             <div class="form-group">
                             	<label for="exampleInputEmail1">Senha</label>
-                            	<input type="password" name="senha" id="senha"  class="form-control" aria-describedby="emailHelp" placeholder="Insira sua Senha">
+                            	<input type="password" name="senha" id="senha"  class="form-control" aria-describedby="emailHelp" placeholder="Senha">
                             </div>
-                            <div class="form-group">
-                            	<p class="text-center">By signing up you accept our <a href="#">Terms Of Use</a></p>
-                            </div>
-                            <div class="col-md-12 text-center ">
+                            <div class="col-md-12 text-center mt-4">
                             	<button type="submit" class=" btn btn-block mybtn btn-primary tx-tfm">Login</button>
                             </div>
-                            <div class="col-md-12 ">
-                               <div class="login-or">
-                                	<hr class="hr-or">
-                                 	<span class="span-or">or</span>
-                               </div>
-                            </div>
-                            <div class="col-md-12 mb-3">
-                            	<p class="text-center">
-                                	<a href="javascript:void();" class="google btn mybtn"><i class="fa fa-google-plus"></i> Signup using Google</a>
-                            	</p>
-                            </div>
                             <div class="form-group">
-                            	<p class="text-center">Não possui Cadastro? <a href="#" id="cadastro">Cadastre-se</a></p>
+								<small>
+                            		<p class="text-center">Não possui Cadastro?<a href="#" id="signup" data-toggle="modal" data-target="#modalCadastro">Cadastre-se</a></p>
+									<p class="text-center"><a class="text-danger" href="#" id="signup" data-toggle="modal" data-target="#modalRecuperar">Recuperar senha</a></p>
+								</small>
                             </div>
                     </form>
 				</div>
@@ -67,3 +56,24 @@
          
 </body>
 </html>
+
+<!-- Modal -->
+<div class="modal fade" id="modalCadastro" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Modal Cadastre-se</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-info">Cadastrar</button>
+      </div>
+    </div>
+  </div>
+</div>
