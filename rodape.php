@@ -22,7 +22,6 @@
                             <li><a href="sobre.php">Sobre</a></li>
                             <li><a href="carrinho.php">Carrinho</a></li>
                             <li><a href="lista-produtos">Lista Produtos</a></li>
-                            <li><a href="categorias.php">Sitemap</a></li>
                         </ul>
                     </div>
                 </div>
