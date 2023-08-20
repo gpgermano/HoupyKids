@@ -1,4 +1,8 @@
 <?php include '../config.php';?>
+<?php 
+	include '../HoupyKids/sistema/classes/usuarios.php';
+	$u = new Usuario;
+	?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,11 +38,11 @@
                     <form action="" method="post" name="login">
                             <div class="form-group">
                             	<label for="exampleInputEmail1">Email ou CPF</label>
-                            	<input type="email" name="email"  class="form-control" id="email" aria-describedby="emailHelp" placeholder="Insira seu Email ou CPF">
+                            	<input type="email" name="email"  class="form-control" id="email" aria-describedby="emailHelp" placeholder="Insira seu Email ou CPF" maxlength="30">
                             </div>
                             <div class="form-group">
                             	<label for="exampleInputEmail1">Senha</label>
-                            	<input type="password" name="senha" id="senha"  class="form-control" aria-describedby="emailHelp" placeholder="Senha">
+                            	<input type="password" name="senha" id="senha"  class="form-control" aria-describedby="emailHelp" placeholder="Senha" maxlength="32">
                             </div>
                             <div class="col-md-12 text-center mt-4">
                             	<button type="submit" class=" btn btn-block mybtn btn-primary tx-tfm">Login</button>
@@ -54,7 +58,6 @@
 			</div>
 		</div>
     </div>   
-         
 </body>
 </html>
 
@@ -73,42 +76,75 @@
 					
 					<div class="form-group">
 						<label for="exampleInputEmail1">Nome Completo</label>
-						<input type="text" class="form-control" id="nome" name="nome" placeholder="Insira o nome e sobrenome">
+						<input type="text" class="form-control" id="nome" name="nome" placeholder="Insira o nome e sobrenome" maxlength="30">
 					</div>
 					
 					<div class="form-group">
 						<label for="exampleInputEmail1">Email</label>
-						<input type="email" class="form-control" id="email" name="email" placeholder="Seu Email">
+						<input type="email" class="form-control" id="email" name="email" placeholder="Seu Email" maxlength="40">
 					</div>
 
 					<div class="form-group">
 						<label for="exampleInputEmail1">CPF</label>
-						<input type="text" class="form-control" id="cpf" name="cpf" placeholder="Digite seu CPF">
+						<input type="text" class="form-control" id="cpf" name="cpf" placeholder="Digite seu CPF" maxlength="11">
 					</div>
 
 					<div class="row">
 						<div class="col-md-6">
 							<div class="form-group">
 								<label for="exampleInputEmail1">Senha</label>
-								<input type="password" class="form-control" id="senha" name="senha" placeholder="Digite sua Senha">
+								<input type="password" class="form-control" id="senha" name="senha" placeholder="Digite sua Senha" maxlength="32">
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="form-group">
 								<label for="exampleInputEmail1">Confirmar Senha</label>
-								<input type="password" class="form-control" id="confirmar-senha" name="confirmar-senha" placeholder="Confirmar senha">
+								<input type="password" class="form-control" id="confirmar-senha" name="conf-senha" placeholder="Confirmar senha" maxlength="32">
 							</div>
 						</div>
 					</div>
 
 					<div class="modal-footer">
 						<button type="button" id="btn-cadastrar" class="btn btn-info">Cadastrar</button>
-					</div>
-				</div>
-			</form>
+					</div>	
+				</form>
+			</div>	
 		</div>
     </div>
 </div>
+<?php 
+		if (isset($_POST['nome']))
+		{
+			$nome = addslashes($_POST['nome']);
+			$email = addslashes($_POST['email']);
+			$cpf = addslashes($_POST['cpf']);
+			$senha = addslashes($_POST['senha']);
+			$confirmarSenha = addslashes($_POST['confSenha']);
+			// Verificar se estra preenchido
+			if (!empty($nome) && !empty($email) && !empty($cpf) && !empty($senha) && !empty($confirmarSenha)) {
+				$u->conectar("projeto_login","localhost", "root","");
+				if ($u->msgErro == "")// se esta tudo ok 
+				{	
+					if ($senha == $confirmarSenha) {
+						if ($u->cadastrar($nome, $email, $cpf, $senha, $confirmarSenha)) {
+							echo "Cadastrado com sucesso acesse para entrar!";
+						} else {
+							echo "Emial ja cadastrado!";
+						}
+					} else {
+						echo "Senha e confirmar senha não correspondem!";
+					}
+					
+				}
+				else {
+					echo "Erro: ".$u->msgErro;
+				}
+			} else {
+				echo "Preencha todos os campos";
+			}
+		}; 
+?>
+
 <!-- Modal Cadastro end-->
 
 <!-- Modal Recuperar Senha begin-->
