@@ -112,39 +112,6 @@
 		</div>
     </div>
 </div>
-<?php 
-		if (isset($_POST['nome']))
-		{
-			$nome = addslashes($_POST['nome']);
-			$email = addslashes($_POST['email']);
-			$cpf = addslashes($_POST['cpf']);
-			$senha = addslashes($_POST['senha']);
-			$confirmarSenha = addslashes($_POST['confSenha']);
-			// Verificar se estra preenchido
-			if (!empty($nome) && !empty($email) && !empty($cpf) && !empty($senha) && !empty($confirmarSenha)) {
-				$u->conectar("projeto_login","localhost", "root","");
-				if ($u->msgErro == "")// se esta tudo ok 
-				{	
-					if ($senha == $confirmarSenha)  {
-						if ($u->cadastrar($nome, $email, $cpf, $senha, $confirmarSenha)) {
-							echo "Cadastrado com sucesso acesse para entrar!";
-						} else {
-							echo "Email ja cadastrado!";
-						}
-					} else {
-						echo "Senha e confirmar senha não correspondem!";
-					}
-					
-				}
-				else {
-					echo "Erro: ".$u->msgErro;
-				}
-			} else {
-				echo "Preencha todos os campos";
-			}
-		}; 
-?>
-
 <!-- Modal Cadastro end-->
 
 <!-- Modal Recuperar Senha begin-->
