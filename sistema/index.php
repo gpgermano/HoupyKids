@@ -1,8 +1,4 @@
 <?php include '../config.php';?>
-<?php 
-	include '../sistema/classes/usuarios.php';
-	$u = new Usuario;
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
