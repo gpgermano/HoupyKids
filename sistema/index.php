@@ -1,8 +1,8 @@
 <?php include '../config.php';?>
 <?php 
-	include '../HoupyKids/sistema/classes/usuarios.php';
+	include '../sistema/classes/usuarios.php';
 	$u = new Usuario;
-	?>
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -125,11 +125,11 @@
 				$u->conectar("projeto_login","localhost", "root","");
 				if ($u->msgErro == "")// se esta tudo ok 
 				{	
-					if ($senha == $confirmarSenha) {
+					if ($senha == $confirmarSenha)  {
 						if ($u->cadastrar($nome, $email, $cpf, $senha, $confirmarSenha)) {
 							echo "Cadastrado com sucesso acesse para entrar!";
 						} else {
-							echo "Emial ja cadastrado!";
+							echo "Email ja cadastrado!";
 						}
 					} else {
 						echo "Senha e confirmar senha não correspondem!";
