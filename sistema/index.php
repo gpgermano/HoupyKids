@@ -1,4 +1,15 @@
-<?php include '../config.php';?>
+<?php 
+	include '../sistema/conexao.php';
+	// Verificar se exite algum cadastro no banco, se não tiver cadastrar o usuário no banco
+	$res = $pdo->query("SELECT * FROM usuarios");
+	$dados = $res->fetchAll(PDO::FETCH_ASSOC);
+
+	if(@count($dados) == 0) {
+		$res = $pdo->prepare("INSERT INTO usuarios (nome, cpf, email, senha, nivel) values ('Administrados', '000.000.000-00', '$email', '123', 'Admin')");
+	}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
