@@ -1,6 +1,19 @@
 <?php 
     include '../config.php';
 
+    if ($_POST['nome'] == "") {
+        echo 'Preencha o campo Nome';
+        exit();
+    }
+    if ($_POST['email'] == "") {
+        echo 'Preencha o campo Email';
+        exit();
+    }
+    if ($_POST['mensagem'] == "") {
+        echo 'Preencha o campo Mensagem';
+        exit();
+    }
+
     $destinatario = $email;
     $assunto = $nome_loja.' - Email da Loja';
 
