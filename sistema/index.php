@@ -4,8 +4,8 @@
 	$res = $pdo->query("SELECT * FROM usuarios");
 	$dados = $res->fetchAll(PDO::FETCH_ASSOC);
 
-	if(@count($dados) == 0) {
-		$res = $pdo->prepare("INSERT INTO usuarios (nome, cpf, email, senha, nivel) values ('Administrados', '000.000.000-00', '$email', '123', 'Admin')");
+	if(count($dados) == 0) {
+		$res = $pdo->prepare("INSERT INTO usuarios (nome, cpf, email, senha, nivel) values ('Administradores', '000.000.000-00', '$email', '123', 'Admin')");
 	}
 ?>
 
