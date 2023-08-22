@@ -127,6 +127,7 @@
                     else {
                         $('#div-mensagem').addClass('text-danger')
                         $('#div-mensagem').text('Deu Erro ao enviar o Formulário! Provavelmente seu servidor de hospedagem não está com permissão de envio habilitado ou você está em um servidor local');
+                       //$('#div-mensagem').text(msg);
                     }
                 }
             })

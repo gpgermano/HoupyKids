@@ -1,5 +1,5 @@
 <?php 
-    include '../config.php';
+    include '../sistema/conexao.php';
 
     if ($_POST['nome'] == "") {
         echo 'Preencha o campo Nome';
@@ -27,5 +27,16 @@
 
 
     //ENVIAR PARA O BANCO DE DADOS O EMAIL E NOME DOS CAMPOS
+    $result =  $pdo->query("SELECT * from emails where email = '$_POST[email]'");
+    $dados = $result->fetchAll(PDO::FETCH_ASSOC);
+    if (count($dados) == 0) {
+        $result =  $pdo->prepare("INSERT INTO emails (nome, email, ativo) values (:nome, :email, :ativo)");
     
+        $result->bindValue(':nome', $_POST['nome']);
+        $result->bindValue(':email', $_POST['email']);
+        $result->bindValue(':ativo', "Sim");
+        $result->execute(); 
+    }
+
+    echo $_POST['email'];
 ?>
