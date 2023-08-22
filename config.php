@@ -14,7 +14,7 @@
     //Variaveis Banco De dados
     $servidor = 'localhost';
     $usuario = 'root';
-    $senha = 'senha';
+    $senha = '';
     $banco = 'loja';
     
     // configurações do frete

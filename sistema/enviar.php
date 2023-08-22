@@ -24,4 +24,8 @@
     mail($destinatario, $assunto, $mensagem, $cabecalhos);
 
     echo 'Enviado com Sucesso!';
+
+
+    //ENVIAR PARA O BANCO DE DADOS O EMAIL E NOME DOS CAMPOS
+    
 ?>
