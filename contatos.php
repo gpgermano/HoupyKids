@@ -81,6 +81,7 @@
                         <textarea name="mensagem" id="mensagem" placeholder="Sua message"></textarea>
                         <button name="btn-enviar-email" id="btn-enviar-email" type="button" class="site-btn">Enviar</button>
                     </div>
+                    <div class="col-md-12 text-center mt-3" id="div-mensagem"></div>
                 </div>
             </form>
         </div>
@@ -88,3 +89,30 @@
     <!-- Contatos form Cadastro begin -->
 
     <?php include('rodape.php') ?>
+
+    <script type="text/javascript">
+        $('#btn-enviar-email').click(function(event){ 
+            event.preventDefault();
+            $('#div-mensagem').addClass('text-info')
+            $('#div-mensagem').text('Enviando')
+            $.ajax({
+                url:"sistema/enviar.php",
+                method:"post",
+                data:$('form').serialize(),
+                dataType: "text",
+                success: function (msg) {  
+                    if (msg.trim() === 'Enviado com Sucesso!') {
+                        $('#div-mensagem').addClass('text-success')
+                        $('#div-mensagem').text(msg);
+                        $('#email').val('');
+                        $('#telefone').val('');
+                        $('#nome').val('');
+                        $('#mensagem').val('');
+                    } else {
+                        $('#div-mensagem').addClass('text-danger')
+                        $('#div-mensagem').text('Deu Erro ao enviar o Formulário! Provavelmente seu servidor de hospedagem não está com permissão de envio habilitado ou você está em um servidor local');
+                    }
+                }
+            })
+        })
+    </script>
