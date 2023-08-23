@@ -1,6 +1,13 @@
 <?php 
-
 	include '../sistema/conexao.php';
+	// Verificar se exite algum cadastro no banco, se não tiver cadastrar o usuário no banco
+	$res = $pdo->query("SELECT * FROM usuarios");
+	$dados = $res->fetchAll(PDO::FETCH_ASSOC);
+	$senha_crip = md5('123');
+	if(count($dados) == 0) {
+		$res = $pdo->prepare("INSERT INTO usuarios (nome, cpf, email, senha, nivel) values ('Administradores', '000.000.000-00', '$email', '$senha_crip', 'Admin')");
+        $res->execute(); 
+	}
 ?>
 
 
@@ -114,15 +121,7 @@
     </div>
 </div>
 <!-- Modal Cadastro end-->
-<?php
-// Verificar se exite algum cadastro no banco, se não tiver cadastrar o usuário no banco
-	$res = $pdo->query("SELECT * FROM usuarios");
-	$dados = $res->fetchAll(PDO::FETCH_ASSOC);
-	$senha_crip = md5('123');
-	if(count($dados) == 0) {
-		$res = $pdo->prepare("INSERT INTO usuarios (nome, cpf, email, senha, nivel) values ('Administradores', '000.000.000-00', '$email', '$senha_crip', 'Admin')");
-	}
-?>
+
 <!-- Modal Recuperar Senha begin-->
 <div class="modal fade" id="modalRecuperar" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
 	<div class="modal-dialog" role="document">
