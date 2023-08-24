@@ -5,8 +5,8 @@
 	$dados = $res->fetchAll(PDO::FETCH_ASSOC);
 	$senha_crip = md5('123');
 	if(count($dados) == 0) {
-		$res = $pdo->prepare("INSERT INTO usuarios (nome, cpf, email, senha, nivel) values ('Administradores', '000.000.000-00', '$email', '$senha_crip', 'Admin')");
-        $res->execute(); 
+		$res = $pdo->prepare("INSERT INTO usuarios (nome, cpf, email, senha, senha_crip, nivel) values ('Administradores', '000.000.000-00', '$email', '123','$senha_crip', 'Admin')");
+		$res->execute();
 	}
 ?>
 
@@ -113,6 +113,8 @@
 					</div>
 
 					<div class="modal-footer">
+						<div id="div-mensagem"></div>
+						<button type="button" id="btn-fechar-cadastrar" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
 						<button type="button" id="btn-cadastrar" class="btn btn-info">Cadastrar</button>
 					</div>	
 				</form>
@@ -137,7 +139,7 @@
 					
 					<div class="form-group">
 						<label for="exampleInputEmail1">Email</label>
-						<input type="email" class="form-control" id="email" name="email" placeholder="Seu Email">
+						<input type="email" class="form-control" id="email-recuperar" name="email-recuperar" placeholder="Seu Email">
 					</div>
 
 					<div class="modal-footer">
@@ -149,6 +151,34 @@
     </div>
 </div>
 <!-- Modal Recuperar Senha begin-->
+
+<script type="text/javascript">
+        $('#btn-cadastrar').click(function(event){ 
+            event.preventDefault();
+            $('#div-mensagem').addClass('text-info')
+            $('#div-mensagem').removeClass('text-danger')
+            $('#div-mensagem').removeClass('text-success')
+            $('#div-mensagem').text('Enviando')
+            $.ajax({
+                url:"sistema/cadastrar.php",
+                method:"post",
+                data:$('form').serialize(),
+                dataType: "text",
+                success: function (msg) {  
+                    if (msg.trim() === 'Cadastrado com Sucesso!') {
+                        $('#div-mensagem').addClass('text-success')
+                        $('#div-mensagem').text(msg);
+						$('#btn-fechar-cadastrar').click();
+                    } 
+                    else {
+                        $('#div-mensagem').addClass('text-danger')
+                        $('#div-mensagem').text(msg);
+                    }
+                }
+            })
+        })
+    </script>
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
 <script src="../js/mascara.js"></script>
