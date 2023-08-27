@@ -1,46 +1,50 @@
 <?php
     include 'conexao.php';
+    
     $nome = $_POST['nome'];
     $cpf = $_POST['cpf'];
-    $email = $_POST['email'];
+    $email_cadastrado = $_POST['email-cadastrado'];
     $senha = $_POST['senha'];
     $senha_crip = md5($senha);
+    $confirmar_Senha = $_POST['confirmar-senha'];
 
     if ($nome == "") {
         echo 'Preencha o Campo nome';
         exit();
     }
-    if ($cpf == "") {
-        echo 'Preencha o Campo CPF';
+    if ($email_cadastrado == "") {
+        echo 'Preencha o Campo email';
         exit();
     }
-    if ($email == "") {
-        echo 'Preencha o Campo email';
+    if ($cpf == "") { 
+        echo 'Preencha o Campo CPF';
         exit();
     }
     if ($senha == "") {
         echo 'Preencha o Campo senha';
         exit();
     }
-    if ($senha != $_POST['confirmar-senha']) {
+    if ($senha != $confirmar_Senha) {
         echo 'as senhas são diferentes!';
         exit();
     }
 
     //ENVIAR PARA O BANCO DE DADOS 
-    $result =  $pdo->query("SELECT * from emails where cpf = '$_POST[cpf]'");
+    $result =  $pdo->query("SELECT * from usuarios where cpf = '$_POST[cpf]'");
     $dados = $result->fetchAll(PDO::FETCH_ASSOC);
     if (count($dados) == 0) {
-        $result =  $pdo->prepare("INSERT INTO emails (nome, cpf, email, senha, senha_crip, nivel) values (:nome, :cpf, :email, :senha, :senha_crip, :nivel)");
+        $result =  $pdo->prepare("INSERT INTO usuarios (nome, cpf, email, senha, senha_crip, nivel) values (:nome, :cpf, :email, :senha, :senha_crip, :nivel)");
     
-        $result->bindValue(':nome', $_POST['nome']);
-        $result->bindValue(':email', $_POST['email']);
-        $result->bindValue(':cpf', $_POST['cpf']);
-        $result->bindValue(':senha', $_POST['senha']);
-        $result->bindValue(':senha_crip', $_POST['senha_crip']);
-        $result->bindValue('nivel', "Cliente");
+        $result->bindValue(":nome", $nome);
+        $result->bindValue(":email", $email_cadastrado);
+        $result->bindValue(":cpf", $cpf);
+        $result->bindValue(":senha", $senha);
+        $result->bindValue(":senha_crip", $senha_crip );
+        $result->bindValue(":nivel", "Cliente");
         $result->execute(); 
-    }else {
+        echo 'Cadastrado com Sucesso!';
+    }
+    else {
         echo 'CPF já Cadastrado!';
     }
 ?>
