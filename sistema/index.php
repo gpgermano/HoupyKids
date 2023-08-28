@@ -45,7 +45,7 @@
 						<h1>Login</h1>
 						</div>
 					</div>
-                    <form action="" method="post" name="login">
+                    <form action="autenticar.php" method="post" name="login">
                             <div class="form-group">
                             	
                             	<input type="email" name="email_login"  class="form-control" id="email_login" aria-describedby="emailHelp" placeholder="Insira seu Email ou CPF" maxlength="30">
