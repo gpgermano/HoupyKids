@@ -42,6 +42,27 @@
         $result->bindValue(":senha_crip", $senha_crip );
         $result->bindValue(":nivel", "Cliente");
         $result->execute(); 
+       
+
+        $result =  $pdo->prepare("INSERT INTO clientes (nome, cpf, email) values (:nome, :cpf, :email)");
+    
+        $result->bindValue(":nome", $nome);
+        $result->bindValue(":email", $email_cadastrado);
+        $result->bindValue(":cpf", $cpf);
+        $result->execute();
+
+
+        $result =  $pdo->query("SELECT * from emails where email = '$email_cadastrado'");
+        $dados = $result->fetchAll(PDO::FETCH_ASSOC);
+        if (count($dados) == 0) {
+            $result =  $pdo->prepare("INSERT INTO emails (nome, email, ativo) values (:nome, :email, :ativo)");
+        
+            $result->bindValue(':nome', $nome);
+            $result->bindValue(':email', $email_cadastrado);
+            $result->bindValue(':ativo', "Sim");
+            $result->execute(); 
+        }
+
         echo 'Cadastrado com Sucesso!';
     }
     else {

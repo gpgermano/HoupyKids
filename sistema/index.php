@@ -52,7 +52,7 @@
                             </div>
                             <div class="form-group">
                             	
-                            	<input type="password" name="senha" id="senha_login"  class="form-control" placeholder="Senha" maxlength="32">
+                            	<input type="password" name="senha_login" id="senha_login"  class="form-control" placeholder="Senha" maxlength="32">
                             </div>
                             <div class="col-md-12 text-center mt-4">
                             	<button type="submit" class=" btn btn-block mybtn btn-primary tx-tfm">Login</button>
@@ -135,6 +135,8 @@
 					$('#div-mensagem').addClass('text-success')
 					$('#div-mensagem').text(msg)
 					$('#btn-fechar-cadastrar').click()
+					$('#email_login').val(document.getElementById('email-cadastrado').value) 
+					$('#senha_login').val(document.getElementById('senha').value) 
 				}
 				else {
 					$('#div-mensagem').addClass('text-danger')
