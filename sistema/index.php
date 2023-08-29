@@ -48,7 +48,7 @@
                     <form action="autenticar.php" method="post" name="login">
                             <div class="form-group">
                             	
-                            	<input type="email" name="email_login"  class="form-control" id="email_login" aria-describedby="emailHelp" placeholder="Insira seu Email ou CPF" maxlength="30">
+                            	<input type="text" name="email_login"  class="form-control" id="email_login" aria-describedby="emailHelp" placeholder="Insira seu Email ou CPF" maxlength="30">
                             </div>
                             <div class="form-group">
                             	
@@ -162,9 +162,9 @@
 				<form method="post">
 					
 					<div class="form-group">
-						<input type="email" class="form-control" id="email-recuperar" name="email-recuperar" placeholder="Seu Email">
+						<input type="email" class="form-control" id="email_recuperar" name="email_recuperar" placeholder="Seu Email">
 					</div>
-
+					<div id="div-mensagem-rec"></div>
 					<div class="modal-footer">
 						<button type="button" id="btn-recuperar" class="btn btn-info">Recuperar</button>
 					</div>
@@ -174,6 +174,29 @@
     </div>
 </div>
 <!-- Modal Recuperar Senha begin-->
+<script type="text/javascript">
+	$('#btn-recuperar').click(function(event){ 
+		event.preventDefault();
+		console.log('Teste');
+		$.ajax({
+			url:"recuperar.php",
+			method:"POST",
+			data:$('form').serialize(),
+			dataType: "text",
+			success: function (msg) {  
+				if (msg.trim() === 'Enviado!') {
+					$('#div-mensagem-rec').addClass('text-success')
+					$('#div-mensagem-rec').text(msg)
+				}
+				else {
+					$('#div-mensagem-rec').addClass('text-danger')
+					$('#div-mensagem-rec').text(msg)
+				}
+			}
+		})
+	})
+
+</script>
 
 
 <script src="../js/mascara.js"></script>
