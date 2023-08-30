@@ -187,11 +187,19 @@
 				if (msg.trim() === 'Enviado!') {
 					$('#div-mensagem-rec').addClass('text-success')
 					$('#div-mensagem-rec').text(msg)
-				}
-				else {
+				} 
+				else if (msg.trim() == 'Preencha o campo email!'){
 					$('#div-mensagem-rec').addClass('text-danger')
 					$('#div-mensagem-rec').text(msg)
-				}
+				} 
+				else if (msg.trim() == 'Este email não está cadastrado!'){
+					$('#div-mensagem-rec').addClass('text-danger')
+					$('#div-mensagem-rec').text(msg)
+				} 
+				else {
+                        $('#div-mensagem-rec').addClass('text-danger')
+                        $('#div-mensagem-rec').text('Deu Erro ao enviar o Formulário! Provavelmente seu servidor de hospedagem não está com permissão de envio habilitado ou você está em um servidor local');
+                    }
 			}
 		})
 	})

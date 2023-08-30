@@ -3,6 +3,7 @@
     include '../config.php';
 
     $email_rec = $_POST['email_recuperar'];
+    
 
     $result =  $pdo->query("SELECT * from usuarios where email = '$email_rec'");
     $dados = $result->fetchAll(PDO::FETCH_ASSOC);
@@ -17,8 +18,27 @@
         mail($destinatario, $assunto, $mensagem, $cabecalhos);
 
         echo 'Enviado!';
-    } else{
+    } else if ($email_rec == "") {
+        echo 'Preencha o campo email!';
+    } 
+    else{
         echo 'Este email não está cadastrado!';
     }
 
+    function gerarNumerosAleatorios($quantidade) {
+        $numeros = array();
+
+        for ($i=0; $i < $quantidade; $i++) { 
+            $numeros[0] = rand();
+        }
+
+        return $numeros;
+    }
+    
+    $quantidadeNumeros = 6;
+    $numerosAleatorios = gerarNumerosAleatorios($quantidadeNumeros);
+    
+    foreach ($numerosAleatorios as $quantidadeNumeros) {
+        echo $quantidadeNumeros."";
+    }
 ?>
