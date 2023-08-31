@@ -9,7 +9,7 @@
     $result =  $pdo->query("SELECT * from usuarios where (email = '$email_login' or cpf = '$email_login') and senha_crip = '$senha_login'");
     $dados = $result->fetchAll(PDO::FETCH_ASSOC);
     if (count($dados) > 0) {
-        $_SESSION['id_usuario'] = $dados[0]['id'];
+        @$_SESSION['id_usuario'] = $dados[0]['id_usuario'];
         $_SESSION['nome_usuario'] = $dados[0]['nome'];
         $_SESSION['email_usuario'] = $dados[0]['email'];
         $_SESSION['cpf_usuario'] = $dados[0]['cpf'];

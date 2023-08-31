@@ -160,7 +160,6 @@
 			</div>
 			<div class="modal-body">
 				<form method="post">
-					
 					<div class="form-group">
 						<input type="email" class="form-control" id="email_recuperar" name="email_recuperar" placeholder="Seu Email">
 					</div>
