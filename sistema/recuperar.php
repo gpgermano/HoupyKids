@@ -25,20 +25,5 @@
         echo 'Este email não está cadastrado!';
     }
 
-    function gerarNumerosAleatorios($quantidade) {
-        $numeros = array();
-
-        for ($i=0; $i < $quantidade; $i++) { 
-            $numeros[0] = rand();
-        }
-
-        return $numeros;
-    }
     
-    $quantidadeNumeros = 6;
-    $numerosAleatorios = gerarNumerosAleatorios($quantidadeNumeros);
-    
-    foreach ($numerosAleatorios as $quantidadeNumeros) {
-        echo $quantidadeNumeros."";
-    }
 ?>
