@@ -1,4 +1,11 @@
 <?php 
+    @session_start();
+    //Verificar se o usuario está autenticado   
+    if (@$_SESSION['id_usuario'] == null || @$_SESSION['nivel_usuario'] != 'Admin') {
+        echo "<script language='javascript'> window.location = 'index.php' </script>";
+    }
+
+
 
     //variaveis para o menu
     $pag = @$_GET["pag"];
