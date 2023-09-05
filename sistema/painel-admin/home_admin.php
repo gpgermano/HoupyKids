@@ -2,13 +2,13 @@
     @session_start();
     //Verificar se o usuario está autenticado   
     if (@$_SESSION['id_usuario'] == null || @$_SESSION['nivel_usuario'] != 'Admin') {
-        echo "<script language='javascript'> window.location = 'index.php' </script>";
+        echo "<script language='javascript'> window.location = '../../home.php' </script>";
     }
 
     //variaveis para o menu
     $pag = @$_GET["pag"];
-    $menu1 = "produtos";
-    $menu2 = "categorias";
+    $menu1 = "produtos_admin";
+    $menu2 = "categorias_admin";
     $menu3 = "sub-categorias";
     $menu4 = "combos";
     $menu5 = "promocoes";
@@ -36,7 +36,7 @@
 
         <!-- Custom styles for this template-->
         <link href="../css/sb-admin-2.min.css" rel="stylesheet">
-        <link href="../css/style.css" rel="stylesheet">
+        <link href="../css/home_admin.css" rel="stylesheet">
         
         <link href="../vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
@@ -58,7 +58,7 @@
             <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
                 <!-- Sidebar - Brand -->
-                <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.php">
+                <a class="sidebar-brand d-flex align-items-center justify-content-center" href="home_admin.php">
 
                     <div class="sidebar-brand-text mx-3">Administrador</div>
                 </a>
@@ -82,9 +82,9 @@
                     </a>
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                         <div class="bg-white py-2 collapse-inner rounded">
-                            <a class="collapse-item" href="index.php?pag=<?php echo $menu1 ?>">Produtos</a> 
-                            <a class="collapse-item" href="index.php?pag=<?php echo $menu2 ?>">Categorias</a>
-                            <a class="collapse-item" href="index.php?pag=<?php echo $menu3 ?>">sub-categorias</a>
+                            <a class="collapse-item" href="home_admin.php?pag=<?php echo $menu1 ?>">Produtos</a> 
+                            <a class="collapse-item" href="home_admin.php?pag=<?php echo $menu2 ?>">Categorias</a>
+                            <a class="collapse-item" href="home_admin.php?pag=<?php echo $menu3 ?>">sub-categorias</a>
                         </div>
                     </div>
                 </li>
@@ -97,8 +97,8 @@
                     </a>
                     <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
                         <div class="bg-white py-2 collapse-inner rounded">
-                            <a class="collapse-item" href="index.php?pag=<?php echo $menu4 ?>">Combos</a>
-                            <a class="collapse-item" href="index.php?pag=<?php echo $menu5 ?>">Promoções</a>
+                            <a class="collapse-item" href="home_admin.php?pag=<?php echo $menu4 ?>">Combos</a>
+                            <a class="collapse-item" href="home_admin.php?pag=<?php echo $menu5 ?>">Promoções</a>
                         </div>
                     </div>
                 </li>
@@ -115,20 +115,20 @@
 
                 <!-- Nav Item - Charts -->
                 <li class="nav-item">
-                    <a class="nav-link" href="index.php?pag=<?php echo $menu6 ?>">
+                    <a class="nav-link" href="home_admin.php?pag=<?php echo $menu6 ?>">
                         <i class="fas fa-fw fa-chart-area"></i>
                         <span>Clientes</span></a>
                 </li>
 
                 <!-- Nav Item - Tables -->
                 <li class="nav-item">
-                    <a class="nav-link" href="index.php?pag=<?php echo $menu7 ?>">
+                    <a class="nav-link" href="home_admin.php?pag=<?php echo $menu7 ?>">
                         <i class="fas fa-fw fa-table"></i>
                         <span>Vendas</span></a>
                 </li>
                 
                 <li class="nav-item">
-                    <a class="nav-link" href="index.php?pag=<?php echo $menu8 ?>">
+                    <a class="nav-link" href="home_admin.php?pag=<?php echo $menu8 ?>">
                         <i class="fas fa-fw fa-table"></i>
                         <span>Backups</span></a>
                 </li>
@@ -196,7 +196,7 @@
                     <div class="container-fluid">
 
                         <?php if ($pag == null) { 
-                        include_once("home.php"); 
+                        include_once("home_admin.php"); 
                         
                         } else if ($pag==$menu1) {
                         include_once($menu1.".php");
@@ -223,7 +223,7 @@
                         include_once($menu8.".php");
                         
                         } else {
-                        include_once("home.php");
+                        include_once("home_admin.php");
                         }
                         ?>
                         
@@ -296,26 +296,17 @@
 
                                     </div>
                                     <div class="col-md-12 mb-2">
-                                        <img src="../img/profiles/<?php echo $img ?>" alt="Carregue sua Imagem" id="target" width="100%">
+                                        <img src="../../imagens/profiles/<?php echo $img ?>" alt="Carregue sua Imagem" id="target" width="100%">
                                     </div>
                                 </div>
                             </div> 
-
-
-
                             <small>
                                 <div id="mensagem" class="mr-4">
 
                                 </div>
                             </small>
-
-
-
                         </div>
                         <div class="modal-footer">
-
-
-
                             <input value="<?php echo $idUsuario ?>" type="hidden" name="txtid" id="txtid">
                             <input value="<?php echo $cpf ?>" type="hidden" name="antigo" id="antigo">
 
@@ -323,8 +314,6 @@
                             <button type="submit" name="btn-salvar-perfil" id="btn-salvar-perfil" class="btn btn-primary">Salvar</button>
                         </div>
                     </form>
-
-
                 </div>
             </div>
         </div>

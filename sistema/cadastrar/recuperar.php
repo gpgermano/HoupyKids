@@ -1,5 +1,5 @@
 <?php 
-    include 'conexao.php';
+    include '../conexao.php';
     include '../config.php';
 
     $email_rec = $_POST['email_recuperar'];

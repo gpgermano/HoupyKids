@@ -1,5 +1,5 @@
-<?php include_once("cabecalho.php");?>
-<?php include_once("cabecalho-busca.php");?>
+<?php include 'cabecalho/cabecalho.php';?>
+<?php include 'cabecalho/cabecalho-busca.php';?>
 
     <!-- Categorias Begin -->
     <section class="categories">
@@ -113,7 +113,7 @@
                                 <div class="hero__text">
                                     <h4 class="mt-4"> Promoção Bermuda</h4>
                                     <p class="mt-2">3 Bermudas por apenas R$30,00</p>
-                                    <a href="produtos.php" class="primary-btn">VER PROMOÇÂO</a>
+                                    <a href="produtos/produtos.php" class="primary-btn">VER PROMOÇÂO</a>
                                 </div>
                             </div>
                         </div>
@@ -130,7 +130,7 @@
                                 <div class="hero__text">
                                     <h4 class="mt-4"> Promoção Camisetas</h4>
                                     <p class="mt-2">3 Camisas por apenas R$30,00</p>
-                                    <a href="produtos.php" class="primary-btn">VER PROMOÇÂO</a>
+                                    <a href="produtos/produto.php" class="primary-btn">VER PROMOÇÂO</a>
                                 </div>
                             </div>
                         </div>
@@ -345,6 +345,6 @@
     </section>
     <!-- Produtos Promocionais End -->
 <?php
-   include_once("rodape.php");
+   include 'rodape/rodape.php';
 ?>
    

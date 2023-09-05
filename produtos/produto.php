@@ -1,5 +1,5 @@
-<?php include_once("cabecalho.php");?>
-<?php include_once("cabecalho-busca.php");?>
+<?php include_once("../cabecalho/cabecalho.php");?>
+<?php include_once("../cabecalho/cabecalho-busca.php");?>
 
     <!-- Detalhes Produtos Begin -->
     <section class="product-details spad">
@@ -9,17 +9,17 @@
                     <div class="product__details__pic">
                         <div class="product__details__pic__item">
                             <img class="product__details__pic__item--large"
-                                src="imagens/Produtos/bermudas.jpg" alt="">
+                                src="../imagens/Produtos/bermudas.jpg" alt="">
                         </div>
                         <div class="product__details__pic__slider owl-carousel">
-                            <img data-imgbigurl="imagens/Produtos/bermudas.jpg"
-                                src="imagens/Produtos/bermudas.jpg" alt="">
-                            <img data-imgbigurl="imagens/Produtos/Produto_vestido.jpg"
-                                src="imagens/Produtos/Produto_vestido.jpg" alt="">
-                            <img data-imgbigurl="imagens/Produtos/Produto_vestido2.jpg"
-                                src="imagens/Produtos/Produto_vestido2.jpg" alt="">
-                            <img data-imgbigurl="imagens/Produtos/camisetas.jpg"
-                                src="imagens/Produtos/camisetas.jpg" alt="">
+                            <img data-imgbigurl="../imagens/Produtos/bermudas.jpg"
+                                src="../imagens/Produtos/bermudas.jpg" alt="">
+                            <img data-imgbigurl="../imagens/Produtos/Produto_vestido.jpg"
+                                src="../imagens/Produtos/Produto_vestido.jpg" alt="">
+                            <img data-imgbigurl="../imagens/Produtos/Produto_vestido2.jpg"
+                                src="../imagens/Produtos/Produto_vestido2.jpg" alt="">
+                            <img data-imgbigurl="../imagens/Produtos/camisetas.jpg"
+                                src="../imagens/Produtos/camisetas.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -124,5 +124,5 @@
         </div>
     </section>
     <!-- Detalhes Produtos End -->
-<?php include_once("rodape.php");?>
+<?php include '../rodape/rodape.php';?>
     

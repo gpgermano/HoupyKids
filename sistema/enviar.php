@@ -1,5 +1,5 @@
 <?php 
-    include '../sistema/conexao.php';
+    include 'conexao.php';
 
     if ($_POST['nome'] == "") {
         echo 'Preencha o campo Nome';

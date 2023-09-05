@@ -1,5 +1,5 @@
 <?php
-  include_once("config.php");
+  include '../sistema/config.php';
 ?>
 
 <!DOCTYPE html>
@@ -17,17 +17,17 @@
 
     
     <!-- Css Styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
-    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="../css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="../css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
 
-    <link rel="shortcut icon" href="img/logo-icone.ico" type="image/x-icon">
-    <link rel="icon" href="img/logo-icone.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/logo-icone.ico" type="image/x-icon">
+    <link rel="icon" href="../img/logo-icone.ico" type="image/x-icon">
 </head>
 <body>
 
@@ -35,7 +35,7 @@
     <div class="humberger__menu__overlay"></div>
     <div class="humberger__menu__wrapper">
         <div class="humberger__menu__logo">
-            <a href="index.php"><img src="img/logo.svg" alt=""></a>
+            <a href="../home.php"><img src="../img/logo.svg" alt=""></a>
         </div>
         <div class="humberger__menu__cart">
             <ul>
@@ -44,12 +44,12 @@
             <div class="header__cart__price">item: <span>$160.00</span></div>
 
             <div class="header__top__right__auth ml-4">
-                <a href="sistema"><i class="fa fa-user"></i> Login</a>
+                <a href="../sistema/login/login.php"><i class="fa fa-user"></i> Login</a>
             </div>
         </div>
         <nav class="humberger__menu__nav mobile-menu">
             <ul>
-                <li class="active"><a href="index.php">Inicio</a></li>
+                <li class="active"><a href="../home.php">Inicio</a></li>
                 
                 <li><a href="#">Produtos</a>
                     <ul class="header__menu__dropdown">

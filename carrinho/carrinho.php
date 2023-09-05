@@ -1,5 +1,5 @@
-<?php include "cabecalho.php";?>
-<?php include "cabecalho-busca.php";?>
+<?php include "../cabecalho/cabecalho.php";?>
+<?php include "../cabecalho/cabecalho-busca.php";?>
 
     <!-- Shoping Cart Section Begin -->
     <section class="shoping-cart spad">
@@ -20,7 +20,7 @@
                             <tbody>
                                 <tr>
                                     <td class="shoping__cart__item">
-                                        <img src="imagens/Produtos/Produto_vestido.jpg" alt="" width="100" height="100">
+                                        <img src="../imagens/Produtos/Produto_vestido.jpg" alt="" width="100" height="100">
                                         <h5>Vestido</h5>
                                     </td>
                                     <td class="shoping__cart__price">
@@ -42,7 +42,7 @@
                                 </tr>
                                 <tr>
                                     <td class="shoping__cart__item">
-                                        <img src="imagens/Produtos/Produto_vestido2.jpg" alt="" width="100" height="100">
+                                        <img src="../imagens/Produtos/Produto_vestido2.jpg" alt="" width="100" height="100">
                                         <h5>Fresh Garden Vegetable</h5>
                                     </td>
                                     <td class="shoping__cart__price">
@@ -64,7 +64,7 @@
                                 </tr>
                                 <tr>
                                     <td class="shoping__cart__item">
-                                        <img src="img/cart/cart-3.jpg" alt="">
+                                        <img src="../img/cart/cart-3.jpg" alt="">
                                         <h5>Organic Bananas</h5>
                                     </td>
                                     <td class="shoping__cart__price">
@@ -93,7 +93,7 @@
                 <div class="col-lg-12">
                     <div class="shoping__cart__btns">
                         
-                        <a href="lista-produtos.php" class="primary-btn cart-btn cart-btn-right bg-success text-light">CONTINUE COMPRANDO</a>
+                        <a href="../produtos/lista-produtos.php" class="primary-btn cart-btn cart-btn-right bg-success text-light">CONTINUE COMPRANDO</a>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -111,4 +111,4 @@
     </section>
     <!-- Shoping car Section End -->
 
-<?php include "rodape.php"?>
+<?php include "../rodape/rodape.php"?>

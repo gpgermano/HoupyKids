@@ -1,5 +1,5 @@
 <?php 
-	include 'conexao.php';
+	include '../conexao.php';
 	// Verificar se exite algum cadastro no banco, se não tiver cadastrar o usuário no banco
 	$res = $pdo->query("SELECT * FROM usuarios");
 	$dados = $res->fetchAll(PDO::FETCH_ASSOC); // conta registros na tabela
@@ -29,8 +29,8 @@
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 	<link href="../css/login.css" rel="stylesheet">
-	<link rel="shortcut icon" href="../img/logo-icone.ico" type="image/x-icon">
-    <link rel="icon" href="../img/logo-icone.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="../../img/logo-icone.ico" type="image/x-icon">
+    <link rel="icon" href="../../img/logo-icone.ico" type="image/x-icon">
 
 	<title>Login - <?php echo $nome_loja?></title>
 </head>
@@ -45,7 +45,7 @@
 						<h1>Login</h1>
 						</div>
 					</div>
-                    <form action="autenticar.php" method="post" name="login">
+                    <form action="../cadastrar/autenticar.php" method="post" name="login">
                             <div class="form-group">
                             	
                             	<input type="text" name="email_login"  class="form-control" id="email_login" aria-describedby="emailHelp" placeholder="Insira seu Email ou CPF" maxlength="30">
@@ -206,4 +206,4 @@
 </script>
 
 
-<script src="../js/mascara.js"></script>
+<script src="../../js/mascara.js"></script>
