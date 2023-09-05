@@ -1,5 +1,5 @@
-<?php include '../cabecalho/cabecalho.php';?>
-<?php include '../cabecalho/cabecalho-busca.php';?>
+<?php include 'cabecalho/cabecalho.php';?>
+<?php include 'cabecalho/cabecalho-busca.php';?>
 
 <!-- Checkout Section Begin -->
 <section class="checkout spad">
@@ -120,4 +120,4 @@
   </div>
 </div>
 
-<?php include '../rodape/rodape.php';?>
+<?php include 'rodape/rodape.php';?>

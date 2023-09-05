@@ -1,5 +1,5 @@
 <?php
-  include '../sistema/config.php';
+  include 'sistema/config.php';
 ?>
 
 <!DOCTYPE html>
@@ -17,14 +17,14 @@
 
     
     <!-- Css Styles -->
-    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="../css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="../css/nice-select.css" type="text/css">
-    <link rel="stylesheet" href="../css/jquery-ui.min.css" type="text/css">
-    <link rel="stylesheet" href="../css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="../css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 
     <link rel="shortcut icon" href="../img/logo-icone.ico" type="image/x-icon">
     <link rel="icon" href="../img/logo-icone.ico" type="image/x-icon">
@@ -39,12 +39,12 @@
         </div>
         <div class="humberger__menu__cart">
             <ul>
-                <li><a href="carrinho.php"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+                <li><a href="carrinho/carrinho.php"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
             </ul>
             <div class="header__cart__price">item: <span>$160.00</span></div>
 
             <div class="header__top__right__auth ml-4">
-                <a href="../sistema/login/login.php"><i class="fa fa-user"></i> Login</a>
+                <a href="sistema/login/login.php"><i class="fa fa-user"></i> Login</a>
             </div>
         </div>
         <nav class="humberger__menu__nav mobile-menu">
@@ -53,13 +53,13 @@
                 
                 <li><a href="#">Produtos</a>
                     <ul class="header__menu__dropdown">
-                        <li><a href="lista-produtos.php">Lista de Produtos</a></li> 
-                        <li><a href="produtos.php">Camisetas</a></li>
-                        <li><a href="produtos.php">Vestidos</a></li>
-                        <li><a href="produtos.php">Bermudas</a></li>
+                        <li><a href="produtos/lista-produtos.php">Lista de Produtos</a></li> 
+                        <li><a href="produtos/produtos.php">Camisetas</a></li>
+                        <li><a href="produtos/produtos.php">Vestidos</a></li>
+                        <li><a href="produtos/produtos.php">Bermudas</a></li>
                     </ul>
                 </li>
-                <li><a href="contatos.php">Contatos</a></li>
+                <li><a href="contatos/contatos.php">Contatos</a></li>
             </ul>
         </nav>
         <div id="mobile-menu-wrap"></div>
@@ -96,7 +96,7 @@
                                 <a target="_blank" href="https://wa.me/<?php $whatsapp_link?>?text=Ol%C3%A1,%20gostaria%20de%20um%20or%C3%A7amento!%20" title="<?php echo $whatsapp?>"><i class="fa fa-whatsapp text-success"></i></a>
                             </div>
                             <div class="header__top__right__auth">
-                                <a href="sistema"><i class="fa fa-user"></i> Login</a>
+                                <a href="sistema/login/login.php"><i class="fa fa-user"></i> Login</a>
                             </div>
                         </div>
                     </div>
@@ -116,10 +116,10 @@
                             <li class="active"><a href="index.php">Inicio</a></li>
                             <li><a href="#">Produtos</a>
                                 <ul class="header__menu__dropdown">
-                                    <li><a href="lista-produtos.php">Lista de Produtos</a></li> 
-                                    <li><a href="produtos.php">Camisetas</a></li>
-                                    <li><a href="produtos.php">Vestidos</a></li>
-                                    <li><a href="produtos.php">Bermudas</a></li>
+                                    <li><a href="produtos/lista-produtos.php">Lista de Produtos</a></li> 
+                                    <li><a href="produtos/produtos.php">Camisetas</a></li>
+                                    <li><a href="produtos/produtos.php">Vestidos</a></li>
+                                    <li><a href="produtos/produtos.php">Bermudas</a></li>
                                 </ul>
                             </li>
                             <li><a href="contatos.php">Contatos</a></li>
@@ -129,7 +129,7 @@
                 <div class="col-lg-3">
                     <div class="header__cart">
                         <ul>
-                            <li><a href="carrinho.php"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+                            <li><a href="carrinho/carrinho.php"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
                         </ul>
                         <div class="header__cart__price">item: <span>$150.00</span></div>
                     </div>

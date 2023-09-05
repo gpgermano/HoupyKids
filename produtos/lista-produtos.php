@@ -179,7 +179,7 @@
                             <div class="product__item__pic set-bg" data-setbg="img/product/product-10.jpg">
                                 <ul class="product__item__pic__hover">
                                     <li><a href="produto.php"><i class="fa fa-eyes"></i></a></li>
-                                    <li><a href="../carrinho/carrinho.php"><i class="fa fa-shopping-cart"></i></a></li>
+                                    <li><a href="carrinho/carrinho.php"><i class="fa fa-shopping-cart"></i></a></li>
                                 </ul>
                             </div>
                             <div class="product__item__text">
@@ -193,7 +193,7 @@
                             <div class="product__item__pic set-bg" data-setbg="img/product/product-11.jpg">
                                 <ul class="product__item__pic__hover">
                                     <li><a href="produto.php"><i class="fa fa-eyes"></i></a></li>
-                                    <li><a href="../carrinho/carrinho.php"><i class="fa fa-shopping-cart"></i></a></li>
+                                    <li><a href="carrinho/carrinho.php"><i class="fa fa-shopping-cart"></i></a></li>
                                 </ul>
                             </div>
                             <div class="product__item__text">
@@ -207,7 +207,7 @@
                             <div class="product__item__pic set-bg" data-setbg="img/product/product-12.jpg">
                                 <ul class="product__item__pic__hover">
                                     <li><a href="produto.php"><i class="fa fa-eyes"></i></a></li>
-                                    <li><a href="../carrinho/carrinho.php"><i class="fa fa-shopping-cart"></i></a></li>
+                                    <li><a href="carrinho/carrinho.php"><i class="fa fa-shopping-cart"></i></a></li>
                                 </ul>
                             </div>
                             <div class="product__item__text">
@@ -229,4 +229,4 @@
     </div>
 </section>
 
-<?php include '../rodape/rodape.php'; ?>
+<?php include 'rodape/rodape.php'; ?>

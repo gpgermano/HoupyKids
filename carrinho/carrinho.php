@@ -1,5 +1,5 @@
-<?php include "../cabecalho/cabecalho.php";?>
-<?php include "../cabecalho/cabecalho-busca.php";?>
+<?php include "cabecalho/cabecalho.php";?>
+<?php include "cabecalho/cabecalho-busca.php";?>
 
     <!-- Shoping Cart Section Begin -->
     <section class="shoping-cart spad">

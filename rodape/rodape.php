@@ -5,7 +5,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="footer__about">
                         <div class="footer__about__logo">
-                            <a href="../home.php"><img src="../img/logo.svg" alt=""></a>
+                            <a href="../index.php"><img src="../img/logo.svg" alt=""></a>
                         </div>
                         <ul>
                             <li><?php echo $endereco_loja?></li>
@@ -18,10 +18,10 @@
                     <div class="footer__widget">
                         <h6>Pricipais Links</h6>
                         <ul>
-                            <li><a href="../contatos/contatos.php">Contatos</a></li>
+                            <li><a href="contatos/contatos.php">Contatos</a></li>
                             <li><a href="sobre.php">Sobre</a></li>
-                            <li><a href="../carrinho/carrinho.php">Carrinho</a></li>
-                            <li><a href="../produtos/lista-produtos.php">Lista Produtos</a></li>
+                            <li><a href="carrinho/carrinho.php">Carrinho</a></li>
+                            <li><a href="produtos/lista-produtos.php">Lista Produtos</a></li>
                         </ul>
                     </div>
                 </div>
@@ -55,16 +55,16 @@
     <!-- Footer Section End -->
 
     <!-- Js Plugins -->
-    <script src="../js/jquery-3.3.1.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/jquery.nice-select.min.js"></script>
-    <script src="../js/jquery-ui.min.js"></script>
-    <script src="../js/jquery.slicknav.js"></script>
-    <script src="../js/mixitup.min.js"></script>
-    <script src="../js/owl.carousel.min.js"></script>
-    <script src="../js/main.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
-    <script src="../js/mascara.js"></script>
+    <script src="js/mascara.js"></script>
     
 </body>
 
