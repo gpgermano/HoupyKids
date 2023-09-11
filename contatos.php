@@ -1,5 +1,5 @@
-<?php include 'cabecalho/cabecalho.php';?>
-<?php include 'cabecalho/cabecalho-busca.php' ;?>
+<?php include 'cabecalho.php';?>
+<?php include 'cabecalho-busca.php' ;?>
 
     <!-- CONTATOS Begin -->
     <section class="contact spad bg-linght">
@@ -88,7 +88,7 @@
     </div>
     <!-- Contatos form Cadastro begin -->
 
-    <?php include 'rodape/rodape.php' ?>
+    <?php include 'rodape.php' ?>
 
     <script type="text/javascript">
         $('#btn-enviar-email').click(function(event){ 

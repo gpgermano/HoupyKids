@@ -35,7 +35,7 @@
     <div class="humberger__menu__overlay"></div>
     <div class="humberger__menu__wrapper">
         <div class="humberger__menu__logo">
-            <a href="../home.php"><img src="../img/logo.svg" alt=""></a>
+            <a href="../index.php"><img src="../img/logo.svg" alt=""></a>
         </div>
         <div class="humberger__menu__cart">
             <ul>
@@ -53,10 +53,10 @@
                 
                 <li><a href="#">Produtos</a>
                     <ul class="header__menu__dropdown">
-                        <li><a href="produtos/lista-produtos.php">Lista de Produtos</a></li> 
-                        <li><a href="produtos/produtos.php">Camisetas</a></li>
-                        <li><a href="produtos/produtos.php">Vestidos</a></li>
-                        <li><a href="produtos/produtos.php">Bermudas</a></li>
+                        <li><a href="lista-produtos.php">Lista de Produtos</a></li> 
+                        <li><a href="produtos.php">Camisetas</a></li>
+                        <li><a href="produtos.php">Vestidos</a></li>
+                        <li><a href="produtos.php">Bermudas</a></li>
                     </ul>
                 </li>
                 <li><a href="contatos/contatos.php">Contatos</a></li>
@@ -116,10 +116,10 @@
                             <li class="active"><a href="index.php">Inicio</a></li>
                             <li><a href="#">Produtos</a>
                                 <ul class="header__menu__dropdown">
-                                    <li><a href="produtos/lista-produtos.php">Lista de Produtos</a></li> 
-                                    <li><a href="produtos/produtos.php">Camisetas</a></li>
-                                    <li><a href="produtos/produtos.php">Vestidos</a></li>
-                                    <li><a href="produtos/produtos.php">Bermudas</a></li>
+                                    <li><a href="lista-produtos.php">Lista de Produtos</a></li> 
+                                    <li><a href="produtos.php">Camisetas</a></li>
+                                    <li><a href="produtos.php">Vestidos</a></li>
+                                    <li><a href="produtos.php">Bermudas</a></li>
                                 </ul>
                             </li>
                             <li><a href="contatos.php">Contatos</a></li>

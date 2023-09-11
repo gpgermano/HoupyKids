@@ -1,5 +1,5 @@
-<?php include 'cabecalho/cabecalho.php';?>
-<?php include 'cabecalho/cabecalho-busca.php';?>
+<?php include 'cabecalho.php';?>
+<?php include 'cabecalho-busca.php';?>
 
     <!-- Categorias Begin -->
     <section class="categories">
@@ -345,6 +345,6 @@
     </section>
     <!-- Produtos Promocionais End -->
 <?php
-   include 'rodape/rodape.php';
+   include 'rodape.php';
 ?>
    

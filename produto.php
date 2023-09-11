@@ -1,5 +1,5 @@
-<?php include_once("../cabecalho/cabecalho.php");?>
-<?php include_once("../cabecalho/cabecalho-busca.php");?>
+<?php include_once("cabecalho.php");?>
+<?php include_once("cabecalho-busca.php");?>
 
     <!-- Detalhes Produtos Begin -->
     <section class="product-details spad">
@@ -9,7 +9,7 @@
                     <div class="product__details__pic">
                         <div class="product__details__pic__item">
                             <img class="product__details__pic__item--large"
-                                src="../imagens/Produtos/bermudas.jpg" alt="">
+                                src="imagens/Produtos/bermudas.jpg" alt="">
                         </div>
                         <div class="product__details__pic__slider owl-carousel">
                             <img data-imgbigurl="../imagens/Produtos/bermudas.jpg"
@@ -124,5 +124,5 @@
         </div>
     </section>
     <!-- Detalhes Produtos End -->
-<?php include '../rodape/rodape.php';?>
+<?php include 'rodape.php';?>
     

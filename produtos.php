@@ -1,5 +1,5 @@
-<?php include '../cabecalho/cabecalho.php'; ?>
-<?php include '../cabecalhocabecalho-busca.php'; ?>
+<?php include 'cabecalho.php'; ?>
+<?php include 'cabecalho-busca.php'; ?>
 
     <!-- Product Section Begin -->
     <section class="product spad">
@@ -400,4 +400,4 @@
     </section>
     <!-- Product Section End -->
 
-    <?php include '../rodape/rodape.php'; ?>
+    <?php include 'rodape.php'; ?>
