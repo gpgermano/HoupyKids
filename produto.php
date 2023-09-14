@@ -12,14 +12,14 @@
                                 src="imagens/Produtos/bermudas.jpg" alt="">
                         </div>
                         <div class="product__details__pic__slider owl-carousel">
-                            <img data-imgbigurl="../imagens/Produtos/bermudas.jpg"
-                                src="../imagens/Produtos/bermudas.jpg" alt="">
-                            <img data-imgbigurl="../imagens/Produtos/Produto_vestido.jpg"
-                                src="../imagens/Produtos/Produto_vestido.jpg" alt="">
-                            <img data-imgbigurl="../imagens/Produtos/Produto_vestido2.jpg"
-                                src="../imagens/Produtos/Produto_vestido2.jpg" alt="">
-                            <img data-imgbigurl="../imagens/Produtos/camisetas.jpg"
-                                src="../imagens/Produtos/camisetas.jpg" alt="">
+                            <img data-imgbigurl="imagens/Produtos/bermudas.jpg"
+                                src="imagens/Produtos/bermudas.jpg" alt="">
+                            <img data-imgbigurl="imagens/Produtos/Produto_vestido.jpg"
+                                src="imagens/Produtos/Produto_vestido.jpg" alt="">
+                            <img data-imgbigurl="imagens/Produtos/Produto_vestido2.jpg"
+                                src="imagens/Produtos/Produto_vestido2.jpg" alt="">
+                            <img data-imgbigurl="imagens/Produtos/camisetas.jpg"
+                                src="imagens/Produtos/camisetas.jpg" alt="">
                         </div>
                     </div>
                 </div>

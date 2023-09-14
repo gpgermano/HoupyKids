@@ -42,11 +42,11 @@
                                 <div class="col-lg-4">
                                     <div class="product__discount__item">
                                         <div class="product__discount__item__pic set-bg"
-                                            data-setbg="../imagens/produtos/bermudas.jpg">
+                                            data-setbg="imagens/produtos/bermudas.jpg">
                                             <div class="product__discount__percent">-20%</div>
                                             <ul class="product__item__pic__hover">
-                                                <li><a href="produto.php"><i class="fa fa-eyes"></i></a></li>
-                                                <li><a href="../carrinho/carrinho.php"><i class="fa fa-shopping-cart"></i></a></li>
+                                                <li><a href="produto.php"><i class="fa fa-eye"></i></a></li>
+                                                <li><a href="carrinho.php"><i class="fa fa-shopping-cart"></i></a></li>
                                             </ul>
                                         </div>
                                         <div class="product__discount__item__text">
@@ -58,11 +58,11 @@
                                 <div class="col-lg-4">
                                     <div class="product__discount__item">
                                         <div class="product__discount__item__pic set-bg"
-                                            data-setbg="../imagens/produtos/Produto_vestido2.jpg">
+                                            data-setbg="imagens/produtos/Produto_vestido2.jpg">
                                             <div class="product__discount__percent">-20%</div>
                                             <ul class="product__item__pic__hover">
-                                                <li><a href="produto.php"><i class="fa fa-eyes"></i></a></li>
-                                                <li><a href="../carrinho/carrinho.php"><i class="fa fa-shopping-cart"></i></a></li>
+                                                <li><a href="produto.php"><i class="fa fa-eye"></i></a></li>
+                                                <li><a href="carrinho.php"><i class="fa fa-shopping-cart"></i></a></li>
                                             </ul>
                                         </div>
                                         <div class="product__discount__item__text">
@@ -74,11 +74,11 @@
                                 <div class="col-lg-4">
                                     <div class="product__discount__item">
                                         <div class="product__discount__item__pic set-bg"
-                                            data-setbg="../imagens/produtos/Produto_vestido.jpg">
+                                            data-setbg="imagens/produtos/Produto_vestido.jpg">
                                             <div class="product__discount__percent">-20%</div>
                                             <ul class="product__item__pic__hover">
-                                                <li><a href="produto.php"><i class="fa fa-eyes"></i></a></li>
-                                                <li><a href="../carrinho/carrinho.php"><i class="fa fa-shopping-cart"></i></a></li>
+                                                <li><a href="produto.php"><i class="fa fa-eye"></i></a></li>
+                                                <li><a href="carrinho.php"><i class="fa fa-shopping-cart"></i></a></li>
                                             </ul>
                                         </div>
                                         <div class="product__discount__item__text">
@@ -90,11 +90,11 @@
                                 <div class="col-lg-4">
                                     <div class="product__discount__item">
                                         <div class="product__discount__item__pic set-bg"
-                                            data-setbg="../imagens/produtos/camisetas.jpg">
+                                            data-setbg="imagens/produtos/camisetas.jpg">
                                             <div class="product__discount__percent">-20%</div>
                                             <ul class="product__item__pic__hover">
-                                                <li><a href="produto.php"><i class="fa fa-eyes"></i></a></li>
-                                                <li><a href="../carrinho/carrinho.php"><i class="fa fa-shopping-cart"></i></a></li>
+                                                <li><a href="produto.php"><i class="fa fa-eye"></i></a></li>
+                                                <li><a href="carrinho.php"><i class="fa fa-shopping-cart"></i></a></li>
                                             </ul>
                                         </div>
                                         <div class="product__discount__item__text">
@@ -110,11 +110,11 @@
                                 <div class="col-lg-4">
                                     <div class="product__discount__item">
                                         <div class="product__discount__item__pic set-bg"
-                                            data-setbg="../img/product/discount/pd-5.jpg">
+                                            data-setbg="img/product/discount/pd-5.jpg">
                                             <div class="product__discount__percent">-20%</div>
                                             <ul class="product__item__pic__hover">
-                                                <li><a href="produto.php"><i class="fa fa-eyes"></i></a></li>
-                                                <li><a href="../carrinho/carrinho.php"><i class="fa fa-shopping-cart"></i></a></li>
+                                                <li><a href="produto.php"><i class="fa fa-eye"></i></a></li>
+                                                <li><a href="carrinho.php"><i class="fa fa-shopping-cart"></i></a></li>
                                             </ul>
                                         </div>
                                         <div class="product__discount__item__text">
@@ -127,11 +127,11 @@
                                 <div class="col-lg-4">
                                     <div class="product__discount__item">
                                         <div class="product__discount__item__pic set-bg"
-                                            data-setbg="../img/product/discount/pd-6.jpg">
+                                            data-setbg="img/product/discount/pd-6.jpg">
                                             <div class="product__discount__percent">-20%</div>
                                             <ul class="product__item__pic__hover">
-                                                <li><a href="produto.php"><i class="fa fa-eyes"></i></a></li>
-                                                <li><a href="../carrinho/carrinho.php"><i class="fa fa-shopping-cart"></i></a></li>
+                                                <li><a href="produto.php"><i class="fa fa-eye"></i></a></li>
+                                                <li><a href="carrinho.php"><i class="fa fa-shopping-cart"></i></a></li>
                                             </ul>
                                         </div>
                                         <div class="product__discount__item__text">
@@ -152,10 +152,10 @@
                     <div class="row">
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item">
-                                <div class="product__item__pic set-bg" data-setbg="../img/product/product-1.jpg">
+                                <div class="product__item__pic set-bg" data-setbg="img/product/product-1.jpg">
                                     <ul class="product__item__pic__hover">
-                                        <li><a href="produto.php"><i class="fa fa-eyes"></i></a></li>
-                                        <li><a href="../carrinho/carrinho.php"><i class="fa fa-shopping-cart"></i></a></li>
+                                        <li><a href="produto.php"><i class="fa fa-eye"></i></a></li>
+                                        <li><a href="carrinho.php"><i class="fa fa-shopping-cart"></i></a></li>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
@@ -166,10 +166,10 @@
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item">
-                                <div class="product__item__pic set-bg" data-setbg="../img/product/product-2.jpg">
+                                <div class="product__item__pic set-bg" data-setbg="img/product/product-2.jpg">
                                     <ul class="product__item__pic__hover">
-                                        <li><a href="produto.php"><i class="fa fa-eyes"></i></a></li>
-                                        <li><a href="../carrinho/carrinho.php"><i class="fa fa-shopping-cart"></i></a></li>
+                                        <li><a href="produto.php"><i class="fa fa-eye"></i></a></li>
+                                        <li><a href="carrinho.php"><i class="fa fa-shopping-cart"></i></a></li>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
@@ -180,10 +180,10 @@
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item">
-                                <div class="product__item__pic set-bg" data-setbg="../img/product/product-3.jpg">
+                                <div class="product__item__pic set-bg" data-setbg="img/product/product-3.jpg">
                                     <ul class="product__item__pic__hover">
-                                        <li><a href="produto.php"><i class="fa fa-eyes"></i></a></li>
-                                        <li><a href="../carrinho/carrinho.php"><i class="fa fa-shopping-cart"></i></a></li>
+                                        <li><a href="produto.php"><i class="fa fa-eye"></i></a></li>
+                                        <li><a href="carrinho.php"><i class="fa fa-shopping-cart"></i></a></li>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
@@ -194,10 +194,10 @@
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item">
-                                <div class="product__item__pic set-bg" data-setbg="../img/product/product-4.jpg">
+                                <div class="product__item__pic set-bg" data-setbg="img/product/product-4.jpg">
                                     <ul class="product__item__pic__hover">
-                                        <li><a href="produto.php"><i class="fa fa-eyes"></i></a></li>
-                                        <li><a href="../carrinho/carrinho.php"><i class="fa fa-shopping-cart"></i></a></li>
+                                        <li><a href="produto.php"><i class="fa fa-eye"></i></a></li>
+                                        <li><a href="carrinho.php"><i class="fa fa-shopping-cart"></i></a></li>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
@@ -208,10 +208,10 @@
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item">
-                                <div class="product__item__pic set-bg" data-setbg="../img/product/product-5.jpg">
+                                <div class="product__item__pic set-bg" data-setbg="img/product/product-5.jpg">
                                     <ul class="product__item__pic__hover">
-                                        <li><a href="produto.php"><i class="fa fa-eyes"></i></a></li>
-                                        <li><a href="../carrinho/carrinho.php"><i class="fa fa-shopping-cart"></i></a></li>
+                                        <li><a href="produto.php"><i class="fa fa-eye"></i></a></li>
+                                        <li><a href="carrinho.php"><i class="fa fa-shopping-cart"></i></a></li>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
@@ -222,10 +222,10 @@
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item">
-                                <div class="product__item__pic set-bg" data-setbg="../img/product/product-6.jpg">
+                                <div class="product__item__pic set-bg" data-setbg="img/product/product-6.jpg">
                                     <ul class="product__item__pic__hover">
-                                        <li><a href="produto.php"><i class="fa fa-eyes"></i></a></li>
-                                        <li><a href="../carrinho/carrinho.php"><i class="fa fa-shopping-cart"></i></a></li>
+                                        <li><a href="produto.php"><i class="fa fa-eye"></i></a></li>
+                                        <li><a href="carrinho.php"><i class="fa fa-shopping-cart"></i></a></li>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
@@ -236,10 +236,10 @@
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item">
-                                <div class="product__item__pic set-bg" data-setbg="../img/product/product-7.jpg">
+                                <div class="product__item__pic set-bg" data-setbg="img/product/product-7.jpg">
                                     <ul class="product__item__pic__hover">
-                                        <li><a href="produto.php"><i class="fa fa-eyes"></i></a></li>
-                                        <li><a href="../carrinho/carrinho.php"><i class="fa fa-shopping-cart"></i></a></li>
+                                        <li><a href="produto.php"><i class="fa fa-eye"></i></a></li>
+                                        <li><a href="carrinho.php"><i class="fa fa-shopping-cart"></i></a></li>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
@@ -250,10 +250,10 @@
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item">
-                                <div class="product__item__pic set-bg" data-setbg="../img/product/product-8.jpg">
+                                <div class="product__item__pic set-bg" data-setbg="img/product/product-8.jpg">
                                     <ul class="product__item__pic__hover">
-                                        <li><a href="produto.php"><i class="fa fa-eyes"></i></a></li>
-                                        <li><a href="../carrinho/carrinho.php"><i class="fa fa-shopping-cart"></i></a></li>
+                                        <li><a href="produto.php"><i class="fa fa-eye"></i></a></li>
+                                        <li><a href="carrinho.php"><i class="fa fa-shopping-cart"></i></a></li>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
@@ -264,10 +264,10 @@
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item">
-                                <div class="product__item__pic set-bg" data-setbg="../img/product/product-9.jpg">
+                                <div class="product__item__pic set-bg" data-setbg="img/product/product-9.jpg">
                                     <ul class="product__item__pic__hover">
-                                        <li><a href="produto.php"><i class="fa fa-eyes"></i></a></li>
-                                        <li><a href="../carrinho/carrinho.php"><i class="fa fa-shopping-cart"></i></a></li>
+                                        <li><a href="produto.php"><i class="fa fa-eye"></i></a></li>
+                                        <li><a href="carrinho.php"><i class="fa fa-shopping-cart"></i></a></li>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
@@ -278,10 +278,10 @@
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item">
-                                <div class="product__item__pic set-bg" data-setbg="../img/product/product-10.jpg">
+                                <div class="product__item__pic set-bg" data-setbg="img/product/product-10.jpg">
                                     <ul class="product__item__pic__hover">
-                                        <li><a href="produto.php"><i class="fa fa-eyes"></i></a></li>
-                                        <li><a href="../carrinho/carrinho.php"><i class="fa fa-shopping-cart"></i></a></li>
+                                        <li><a href="produto.php"><i class="fa fa-eye"></i></a></li>
+                                        <li><a href="carrinho.php"><i class="fa fa-shopping-cart"></i></a></li>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
@@ -292,10 +292,10 @@
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item">
-                                <div class="product__item__pic set-bg" data-setbg="../img/product/product-11.jpg">
+                                <div class="product__item__pic set-bg" data-setbg="img/product/product-11.jpg">
                                     <ul class="product__item__pic__hover">
-                                        <li><a href="produto.php"><i class="fa fa-eyes"></i></a></li>
-                                        <li><a href="../carrinho/carrinho.php"><i class="fa fa-shopping-cart"></i></a></li>
+                                        <li><a href="produto.php"><i class="fa fa-eye"></i></a></li>
+                                        <li><a href="carrinho.php"><i class="fa fa-shopping-cart"></i></a></li>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
@@ -306,10 +306,10 @@
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item">
-                                <div class="product__item__pic set-bg" data-setbg="../img/product/product-12.jpg">
+                                <div class="product__item__pic set-bg" data-setbg="img/product/product-12.jpg">
                                     <ul class="product__item__pic__hover">
-                                        <li><a href="produto.php"><i class="fa fa-eyes"></i></a></li>
-                                        <li><a href="../carrinho/carrinho.php"><i class="fa fa-shopping-cart"></i></a></li>
+                                        <li><a href="produto.php"><i class="fa fa-eye"></i></a></li>
+                                        <li><a href="carrinho.php"><i class="fa fa-shopping-cart"></i></a></li>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
@@ -329,11 +329,11 @@
                                 <div class="col-lg-4">
                                     <div class="product__discount__item">
                                         <div class="product__discount__item__pic set-bg"
-                                            data-setbg="../imagens/produtos/bermudas.jpg">
+                                            data-setbg="imagens/produtos/bermudas.jpg">
                                             <div class="product__discount__percent">-20%</div>
                                             <ul class="product__item__pic__hover">
-                                                <li><a href="produto.php"><i class="fa fa-eyes"></i></a></li>
-                                                <li><a href="../carrinho/carrinho.php"><i class="fa fa-shopping-cart"></i></a></li>
+                                                <li><a href="produto.php"><i class="fa fa-eye"></i></a></li>
+                                                <li><a href="carrinho.php"><i class="fa fa-shopping-cart"></i></a></li>
                                             </ul>
                                         </div>
                                         <div class="product__discount__item__text">
@@ -345,11 +345,11 @@
                                 <div class="col-lg-4">
                                     <div class="product__discount__item">
                                         <div class="product__discount__item__pic set-bg"
-                                            data-setbg="../imagens/produtos/Produto_vestido2.jpg">
+                                            data-setbg="imagens/produtos/Produto_vestido2.jpg">
                                             <div class="product__discount__percent">-20%</div>
                                             <ul class="product__item__pic__hover">
-                                                <li><a href="produto.php"><i class="fa-eyes"></i></a></li>
-                                                <li><a href="../carrinho/carrinho.php"><i class="fa fa-shopping-cart"></i></a></li>
+                                                <li><a href="produto.php"><i class="fa fa-eye"></i></a></li>
+                                                <li><a href="carrinho.php"><i class="fa fa-shopping-cart"></i></a></li>
                                             </ul>
                                         </div>
                                         <div class="product__discount__item__text">
@@ -361,11 +361,11 @@
                                 <div class="col-lg-4">
                                     <div class="product__discount__item">
                                         <div class="product__discount__item__pic set-bg"
-                                            data-setbg="../imagens/produtos/Produto_vestido.jpg">
+                                            data-setbg="imagens/produtos/Produto_vestido.jpg">
                                             <div class="product__discount__percent">-20%</div>
                                             <ul class="product__item__pic__hover">
-                                                <li><a href="produto.php"><i class="fa fa-eyes"></i></a></li>
-                                                <li><a href="../carrinho/carrinho.php"><i class="fa fa-shopping-cart"></i></a></li>
+                                                <li><a href="produto.php"><i class="fa fa-eye"></i></a></li>
+                                                <li><a href="carrinho.php"><i class="fa fa-shopping-cart"></i></a></li>
                                             </ul>
                                         </div>
                                         <div class="product__discount__item__text">
@@ -377,11 +377,11 @@
                                 <div class="col-lg-4">
                                     <div class="product__discount__item">
                                         <div class="product__discount__item__pic set-bg"
-                                            data-setbg="../imagens/produtos/camisetas.jpg">
+                                            data-setbg="imagens/produtos/camisetas.jpg">
                                             <div class="product__discount__percent">-20%</div>
                                             <ul class="product__item__pic__hover">
-                                                <li><a href="produto.php"><i class="fa-eyes"></i></a></li>
-                                                <li><a href="../carrinho/carrinho.php"><i class="fa fa-shopping-cart"></i></a></li>
+                                                <li><a href="produto.php"><i class="fa fa-eye"></i></a></li>
+                                                <li><a href="carrinho.php"><i class="fa fa-shopping-cart"></i></a></li>
                                             </ul>
                                         </div>
                                         <div class="product__discount__item__text">
