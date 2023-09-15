@@ -39,7 +39,7 @@
         </div>
         <div class="humberger__menu__cart">
             <ul>
-                <li><a href="carrinho/carrinho.php"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+                <li><a href="carrinho.php"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
             </ul>
             <div class="header__cart__price">item: <span>$160.00</span></div>
 
@@ -129,7 +129,7 @@
                 <div class="col-lg-3">
                     <div class="header__cart">
                         <ul>
-                            <li><a href="carrinho/carrinho.php"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+                            <li><a href="carrinho.php"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
                         </ul>
                         <div class="header__cart__price">item: <span>$150.00</span></div>
                     </div>
