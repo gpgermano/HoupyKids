@@ -2,5 +2,5 @@
   @session_start();
   @session_destroy();
 
-  echo "<script language='javascript'> window.location = '../../home.php' </script>";
+  echo "<script language='javascript'> window.location = '../login/login.php' </script>";
 ?>

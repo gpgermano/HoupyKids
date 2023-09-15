@@ -2,7 +2,7 @@
     @session_start();
     //Verificar se o usuario está autenticado   
     if (@$_SESSION['id_usuario'] == null || @$_SESSION['nivel_usuario'] != 'Admin') {
-        echo "<script language='javascript'> window.location = '../../home.php' </script>";
+        echo "<script language='javascript'> window.location = '../login/login.php' </script>";
     }
 
     //variaveis para o menu
@@ -168,7 +168,7 @@
                             <!-- Nav Item - User Information -->
                             <li class="nav-item dropdown no-arrow">
                                 <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <span class="mr-2 d-none d-lg-inline text-gray-600 small">Nome do usuario</span>
+                                    <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?php echo @$_SESSION['nome_usuario'] ?></span>
                                     <img class="img-profile rounded-circle" src="../../imagens/sem-foto.jpg">
 
                                 </a>

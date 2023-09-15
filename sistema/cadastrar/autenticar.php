@@ -16,16 +16,16 @@
         $_SESSION['nivel_usuario'] = $dados[0]['nivel'];
 
         if ($_SESSION['nivel_usuario'] == 'Admin') {
-            echo "<script language='javascript'> window.location = 'painel-admin' </script>";
+            echo "<script language='javascript'> window.location = '../painel-admin/home_admin.php' </script>";
         }
 
         if ($_SESSION['nivel_usuario'] == 'Cliente') {
-            echo "<script language='javascript'> window.location = 'painel-cliente' </script>";
+            echo "<script language='javascript'> window.location = '../painel-cliente' </script>";
         }
 
     }else {
         echo "<script language='javascript'> window.alert('Dados Incorretos!') </script>";
-        echo "<script language='javascript'> window.location = 'index.php' </script>";
+        echo "<script language='javascript'> window.location = '../login/login.php' </script>";
     }
 
 
