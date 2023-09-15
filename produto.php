@@ -124,5 +124,5 @@
         </div>
     </section>
     <!-- Detalhes Produtos End -->
-<?php include_once("rodape.php");?>
+<?php include 'rodape.php';?>
     
