@@ -19,9 +19,9 @@ $('#btn-recuperar').click(function(event){
                 $('#div-mensagem-rec').text(msg)
             } 
             else {
-                    $('#div-mensagem-rec').addClass('text-danger')
-                    $('#div-mensagem-rec').text('Deu Erro ao enviar o Formulário! Provavelmente seu servidor de hospedagem não está com permissão de envio habilitado ou você está em um servidor local');
-                }
+                $('#div-mensagem-rec').addClass('text-danger')
+                $('#div-mensagem-rec').text('Deu Erro ao enviar o Formulário! Provavelmente seu servidor de hospedagem não está com permissão de envio habilitado ou você está em um servidor local');
+            }
         }
     })
 })
