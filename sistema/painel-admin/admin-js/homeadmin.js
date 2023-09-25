@@ -16,7 +16,11 @@ $('#btn-salvar-perfil').click(function(event){
             }
         }
     })
+   
 })
+function recarregarPagina() {
+    window.location.reload();
+}
 
 function carregarImg() {
 
@@ -53,7 +57,7 @@ $("#form-img").submit(function () {
             if (mensagem.trim() == "Salvo com Sucesso!!") {
                 $('#mensagem').addClass('text-success');
                 $('#btn-fechar').click();
-                window.location = "../home_admin.php?pag="+pag;
+                window.location = "home_admin.php?pag="+pag;
 
             } else {
                 $('#mensagem').addClass('text-danger')
@@ -76,10 +80,21 @@ $("#form-img").submit(function () {
     });
 });
 
+$('#btn-deletar').click(function (event) {
+    var pags = "categorias_admin";
+    event.preventDefault();
+    $.ajax({
+        url: pags + "/excluir.php",
+        method: "POST",
+        data: $('form').serialize(),
+        dataType: "text",
+        success: function (mensagem) {
 
-
-$(document).ready(function () {
-    $('#dataTable').dataTable({
-        "ordering": false
+            if (mensagem.trim() === 'Excluido com Sucesso!') {
+                $('#btn-cancelar-excluir').click();
+                alert.mensagem('Exlcuido copm sucesso')
+            }
+            $('#mensagem_excluir').text(mensagem)
+        }
     })
-});
+})
