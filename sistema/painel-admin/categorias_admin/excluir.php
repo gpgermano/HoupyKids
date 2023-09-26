@@ -4,5 +4,5 @@
     
     $pdo->query("DELETE FROM categorias WHERE id_categorias = '$id' ");
     
-    echo 'Excluido com Sucesso!';
+    echo 'Excluido com Sucesso!!';
 ?>

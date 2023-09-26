@@ -56,6 +56,7 @@
     $res->bindValue(":nome_url", $nome_url);
     
     
+    
     $res->execute(); 
-    echo 'Salvo com Sucesso!';
+    echo 'Salvo com Sucesso!!';
 ?>

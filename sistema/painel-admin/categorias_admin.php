@@ -21,7 +21,9 @@
                 <thead>
                     <tr>
                         <th>Nome</th>
+                        <th>Itens</th>
                         <th>Imagens</th>
+                        <th>ações</th>
                     </tr>
                 </thead>
 
@@ -42,8 +44,9 @@
                         ?>
                     <tr>
                         <td><?php echo $nome ?></td>
-                        <td><?php echo $imagens?></td>
                         <td><?php echo $itens ?></td>
+                        <td><img src="../../img/categorias/<?php echo $imagens?>" width="50"></td>
+                        
 
                         <td>
                             <a href="home_admin.php?pag=<?php echo $pag ?>&funcao=editar&id=<?php echo $id ?>" class='text-primary mr-1' title='Editar Registro'><i class='far fa-edit'></i></a>
@@ -96,9 +99,9 @@
                     </div>
                     <?php 
                         if (@$img2 != "") { ?>
-                            <img src="../../imagens/<?php echo $img2?>" width="200" height="200" id="target">
+                            <img src="../../imagens/categorias/<?php echo $img2?>" width="200" height="200" id="target">
                     <?php } else {?>
-                            <img src="../../imagens/sem-foto.jpg" width="200" height="200" id="target">
+                            <img src="../../imagens/categorias/sem-foto.jpg" width="200" height="200" id="target">
                     <?php }?>
                     
                     <small>
@@ -110,7 +113,7 @@
                     <input value="<?php echo @$nome2 ?>" type="hidden" name="antigo" id="antigo">
 
                     <button type="button" id="btn-fechar" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                    <button type="submit" name="btn-salvar" id="btn-salvar" onclick="recarregarPagina()"  class="btn btn-primary">Salvar</button>
+                    <button type="submit" name="btn-salvar" id="btn-salvar"  class="btn btn-primary">Salvar</button>
                 </div>
             </form>
         </div>
@@ -136,7 +139,7 @@
                 <button type="button" class="btn btn-secondary" data-dismiss="modal" id="btn-cancelar-excluir">Cancelar</button>
                 <form method="post">
                     <input type="hidden" id="id" name="id" value="<?php echo @$_GET['id'] ?>" required>
-                    <button type="button" id="btn-deletar" name="btn-deletar" onclick="recarregarPagina()" class="btn btn-danger">Excluir</button>
+                    <button type="button" id="btn-deletar" name="btn-deletar" class="btn btn-danger">Excluir</button>
                 </form>
             </div>
         </div>
