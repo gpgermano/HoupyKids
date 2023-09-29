@@ -10,7 +10,7 @@
     $pag = @$_GET["pag"];
     $menu1 = "produtos_admin";
     $menu2 = "categorias_admin";
-    $menu3 = "sub-categorias";
+    $menu3 = "sub_categorias_admin";
     $menu4 = "combos";
     $menu5 = "promocoes";
     $menu6 = "clientes";
@@ -186,7 +186,7 @@
                                     </a>
 
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="../logout.php">
+                                    <a class="dropdown-item" href="../login/logout.php">
                                         <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-danger"></i>
                                         Sair
                                     </a>
