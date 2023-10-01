@@ -34,7 +34,7 @@
                    $query = $pdo->query("SELECT * FROM sub_categorias order by id_subCategoria desc ");
                    $res = $query->fetchAll(PDO::FETCH_ASSOC);
 
-                   for ($i=0; $i < count($res); $i++) { 
+                    for ($i=0; $i < count($res); $i++) { 
                       foreach ($res[$i] as $key => $value) {
                       }
                         $id = $res[$i]['id_subCategoria'];
@@ -72,7 +72,7 @@
                     $titulo = "Editar Registro";
                     $id2 = $_GET['id'];
 
-                    $query = $pdo->query("SELECT * FROM sub_categorias where id_SubCategorias = '".$id2."'");
+                    $query = $pdo->query("SELECT * FROM sub_categorias where id_SubCategoria = '".$id2."'");
                     $res = $query->fetchAll(PDO::FETCH_ASSOC);
 
                     $nome2 = $res[0]['nome'];
@@ -102,13 +102,22 @@
                         <select class="form-control form-control-sm" name="categoria" id="categoria">
                             <?php
                                 if (@$_GET['funcao'] == 'editar') {
-                                    $query = $pdo->query("SELECT FROM * categorias where id = '$categoria2'");
+                                    $query = $pdo->query("SELECT FROM * categorias where id_categorias = '$categoria2'");
                                     $res = $query->fetchAll(PDO::FETCH_ASSOC);
 
                                     $nomeCat = $res[0]['nome'];
                                     echo "<option value='.$categoria2.'>".$nomeCat."</option>" ;
                                 };
+                                $query2 = $pdo->query("SELECT * FROM categorias order by nome asc");
+                                $res2 = $query2->fetchAll(PDO::FETCH_ASSOC);
 
+                                for ($i=0; $i < count($res2); $i++) { 
+                                    foreach ($res2[$i] as $key => $value) {
+                                    }
+                                    if ($nomeCat !=  $res2[$i]['nome']) {
+                                        echo "<option value='.$res2[$i]['id'].'>".$res2[$i]['nome']."</option>" ;
+                                    }
+                                }
 
                             ?>
                         </select>
@@ -120,9 +129,9 @@
                     </div>
                     <?php 
                         if (@$img2 != "") { ?>
-                            <img src="../../imagens/categorias/<?php echo $img2?>" width="200" height="200" id="target">
+                            <img src="../../imagens/sub-categorias/<?php echo $img2?>" width="200" height="200" id="target">
                     <?php } else {?>
-                            <img src="../../imagens/categorias/sem-foto.jpg" width="200" height="200" id="target">
+                            <img src="../../imagens/sub-categorias/sem-foto.jpg" width="200" height="200" id="target">
                     <?php }?>
                     
                     <small>
