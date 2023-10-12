@@ -1,5 +1,5 @@
 <?php
-    $pag = 'categorias_admin';
+    $pag = 'sub_categorias_admin';
     include '../conexao.php';
     @session_start();
     if (@$_SESSION['id_usuario'] == null || @$_SESSION['nivel_usuario'] != 'Admin') {
@@ -8,20 +8,20 @@
 ?>
 
 <div class="row mt-4 mb-4">
-    <a type="button" class="btn-primary btn-sm ml-3 d-none d-md-block" href="home_admin.php?pag=<?php echo $pag ?>&funcao=novo">Nova Categoria</a>
+    <a type="button" class="btn-primary btn-sm ml-3 d-none d-md-block" href="home_admin.php?pag=<?php echo $pag ?>&funcao=novo">Nova Sub-Categoria</a>
     <a type="button" class="btn-primary btn-sm ml-3 d-block d-sm-none" href="home_admin?pag=<?php echo $pag ?>&funcao=novo">+</a>
 </div>
 
 <!-- DataTales Example -->
 <div class="card shadow mb-4">
-
     <div class="card-body">
         <div class="table-responsive">
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                 <thead>
                     <tr>
                         <th>Nome</th>
-                        <th>Itens</th>
+                        <th>Produtos</th>
+                        <th>Categorias</th>
                         <th>Imagens</th>
                         <th>ações</th>
                     </tr>
@@ -31,21 +31,23 @@
 
                     <?php 
 
-                   $query = $pdo->query("SELECT * FROM categorias order by id_categorias desc ");
+                   $query = $pdo->query("SELECT * FROM sub_categorias order by id_subCategoria desc ");
                    $res = $query->fetchAll(PDO::FETCH_ASSOC);
 
-                   for ($i=0; $i < count($res); $i++) { 
+                    for ($i=0; $i < count($res); $i++) { 
                       foreach ($res[$i] as $key => $value) {
                       }
-                        $id = $res[$i]['id_categorias'];
+                        $id = $res[$i]['id_subCategoria'];
                         $nome = $res[$i]['nome'];
                         $imagens = $res[$i]['imagem'];
                         $itens = $res[$i]['itens'];
+                        $categoria = $res[$i]['id_categoria'];
                         ?>
                     <tr>
                         <td><?php echo $nome ?></td>
+                        <td><?php echo $categoria ?></td>
                         <td><?php echo $itens ?></td>
-                        <td><img src="../../imagens/categorias/<?php echo $imagens?>" width="50"></td>
+                        <td><img src="../../imagens/sub-categorias/<?php echo $imagens?>" width="50"></td>
                         
 
                         <td>
@@ -61,7 +63,7 @@
 </div>
 
 <!-- begin Modal  editar-->
-<div class="modal fade" id="mEditar" tabindex="1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="mEditar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -70,11 +72,12 @@
                     $titulo = "Editar Registro";
                     $id2 = $_GET['id'];
 
-                    $query = $pdo->query("SELECT * FROM categorias where id_categorias = '".$id2."'");
+                    $query = $pdo->query("SELECT * FROM sub_categorias where id_SubCategoria = '".$id2."'");
                     $res = $query->fetchAll(PDO::FETCH_ASSOC);
 
                     $nome2 = $res[0]['nome'];
                     $img2 = $res[0]['imagem'];
+                    $categoria2 = $res[0]['id_categoria'];
 
                 } else {
                     $titulo = "Inserir Registro";
@@ -86,22 +89,49 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form id="form-img" method="POST">
+            <form id="form-img-categorias" method="POST">
                 <div class="modal-body">
 
                     <div class="form-group">
-                        <label >Nome</label>
+                        <label>Nome</label>
                         <input value="<?php echo @$nome2 ?>" type="text" class="form-control" id="nome-cat" name="nome-cat" placeholder="Nome">
                     </div>
+                    
+                    <div class="form-group">
+                        <label>Categoria</label>
+                        <select class="form-control form-control-sm" name="categoria" id="categoria">
+                            <?php
+                                if (@$_GET['funcao'] == 'editar') {
+                                    $query = $pdo->query("SELECT FROM * categorias where id_categorias = '$categoria2'");
+                                    $res = $query->fetchAll(PDO::FETCH_ASSOC);
+
+                                    $nomeCat = $res[0]['nome'];
+                                    echo "<option value='.$categoria2.'>".$nomeCat."</option>" ;
+                                };
+                                $query2 = $pdo->query("SELECT * FROM categorias order by nome asc");
+                                $res2 = $query2->fetchAll(PDO::FETCH_ASSOC);
+
+                                for ($i=0; $i < count($res2); $i++) { 
+                                    foreach ($res2[$i] as $key => $value) {
+                                    }
+                                    if ($nomeCat !=  $res2[$i]['nome']) {
+                                        echo "<option value='.$res2[$i]['id'].'>".$res2[$i]['nome']."</option>" ;
+                                    }
+                                }
+
+                            ?>
+                        </select>
+                    </div>
+
                     <div class="form-group">
                         <label>Imagem</label>
                         <input type="file" value="<?php echo @$img2 ?>"  class="form-control-file" id="imagem" name="imagem" onchange="carregarImg();">
                     </div>
                     <?php 
                         if (@$img2 != "") { ?>
-                            <img src="../../imagens/categorias/<?php echo $img2?>" width="200" height="200" id="target">
+                            <img src="../../imagens/sub-categorias/<?php echo $img2?>" width="200" height="200" id="target">
                     <?php } else {?>
-                            <img src="../../imagens/categorias/sem-foto.jpg" width="200" height="200" id="target">
+                            <img src="../../imagens/sub-categorias/sem-foto.jpg" width="200" height="200" id="target">
                     <?php }?>
                     
                     <small>
